@@ -2,11 +2,11 @@ import sqlalchemy as sq
 from sqlalchemy.orm import declarative_base
 from sqlalchemy import create_engine, MetaData
 from sqlalchemy.orm import Session
-from config import db_database
+from config import *
 
 metadata = MetaData()
 Base = declarative_base()
-engine = create_engine(db_database)
+engine = create_engine(db)
 
 
 class Viewed(Base):

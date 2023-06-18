@@ -15,10 +15,10 @@ vk = vk_api.VkApi(token=comm_token)
 longpoll = VkLongPoll(vk)
 
 class VkBot():
-    def __init__(self, comunity_token, acces_token):
-        self.vk = vk_api.VkApi(token=comunity_token)
+    def __init__(self, comm_token, user_token):
+        self.vk = vk_api.VkApi(token=comm_token)
         self.longpoll = VkLongPoll(self.vk)
-        self.vk_tools = VkTools(acces_token)
+        self.vk_tools = VkTools(user_token)
         self.params = {}
         self.worksheets = []
         self.offset = 0
